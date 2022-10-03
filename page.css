@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background-image: url("foto08.webp"); 
+  /*background-position: center; /* Center the image */
+  /*background-repeat:no-repeat ; /* Do not repeat the image */
+  /*background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.wrapper{
+	width: 100%;
+	height: 100%;
+}
+
+.nome{
+  text-shadow: 0.2px 0.2px white;
+}
+
+.titulo{
+  width: 500px;
+	height: 8px;
+	margin: 10px auto 0;
+	padding: 2px 0px;
+  color:#ffe773;
+  text-align: center;
+  font-size:15;
+  text-shadow: 2px 1px black;
+	
+	
+}
+
+.numero{
+  color:#ffe773;
+  font-size:15;
+  text-shadow: 2px 1px black;
+}
+
+.lboard_section{
+	width: 500px;
+	height: 780px;
+	margin: 50px auto 0;
+	background: #7798af;
+	padding: 15px 220px;
+	position: relative;
+	border-radius: 5px;
+}
+
+.lboard_section .lboard_tabs ul{
+	display: flex;
+}
+
+.lboard_section .lboard_tabs ul li{
+	margin-right: 50px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #fffbfb;
+	cursor: pointer;
+}
+
+.lboard_section .lboard_tabs ul li:hover,
+.lboard_section .lboard_tabs ul li.active{
+	color: rgb(3, 0, 0);
+}
+
+.lboard_wrap{
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	background: #000000b2;
+	width: 100%;
+	height: 94%;
+	border-radius: 5px;
+  padding: 10px;
+
+}
+
+.lboard_wrap .lboard_item{
+	padding: 25px;
+}
+
+.lboard_wrap .lboard_mem{
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #ffe773;
+}
+
+.lboard_wrap .lboard_mem:first-child{
+	padding-top: 0;
+}
+
+.lboard_wrap .lboard_mem:last-child{
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+.lboard_wrap .lboard_mem .img{
+	width: 70px;
+}
+
+.lboard_wrap .lboard_mem img{
+	display: block;
+	width: 100%;
+}
+
+.lboard_wrap .lboard_mem .name_bar{
+	margin: 0 20px;
+	width: calc(100% - 150px);
+}
+
+.lboard_wrap .lboard_mem .name_bar p{
+	color: #f0f0f0;
+}
+
+.lboard_wrap .lboard_mem .name_bar p span{
+	margin-right: 5px;
+}
+
+.lboard_wrap .lboard_mem .points{
+	width: 135px;
+	color: #ffffff;
+}
+
+
+
+/* 
+  Abaixo é a cor do fundo da barra
+
+*/
+.lboard_wrap .lboard_mem .name_bar .bar_wrap{
+	width: 100%;
+	height: 5px;
+	background: #ffffff;
+	margin-top: 5px;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+/* 
+  Abaixo é a cor da barra
+
+*/
+.lboard_wrap .lboard_mem .name_bar .bar_wrap .inner_bar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	background: rgb(69, 131, 72);
+	border-radius: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
